@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="css/form.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          
+
+          <div class="info">
+            <div class="information">
+              <img src="img/location.png" class="icon" alt="" />
+              <p>Mumbai</p>
+            </div>
+            <div class="information">
+              <img src="img/email.png" class="icon" alt="" />
+              <p>rajatshukla@travelvj.com</p>
+            </div>
+            <div class="information">
+              <img src="img/phone.png" class="icon" alt="" />
+              <p>+91 8655777737</p>
+            </div>
+          </div>
+          <br>
+ <h3 class="title">Booking Form</h3>
+        <!--  <div class="social-media">-->
+        <!--    <p>Connect with us :</p>-->
+        <!--    <div class="social-icons">-->
+        <!--      <a href="https://facebook.com/groups/rajatshukla/">-->
+        <!--        <i class="fab fa-facebook-f"></i>-->
+        <!--      </a>-->
+        <!--      <a href="https://www.twitter.com/rajatshukla__">-->
+        <!--        <i class="fab fa-twitter"></i>-->
+        <!--      </a>-->
+        <!--      <a href="https://instagram.com/rajatshukla___">-->
+        <!--        <i class="fab fa-instagram"></i>-->
+        <!--      </a>-->
+        <!--      <a href="https://www.linkedin.com/mwlite/in/rajat-shukla-023256157">-->
+        <!--        <i class="fab fa-linkedin-in"></i>-->
+        <!--      </a>-->
+        <!--    </div>-->
+        <!--  </div>-->
+        <!--</div>-->
+
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form name="sentMessage" id="contactForm" action = "form1.php" method="POST" >
+           
+            <div class="input-container">
+            
+              <input type="text" class="input"  id="name" name='name'  required>
+              <label>Name</label>
+              <span>Name</span>
+            </div>
+
+            <div class="input-container">
+              <input type="tel" name="phone" class="input"  required>
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            
+            <div class="input-container">
+                <input type="text" class="input"  id="email" name="email" required>
+                <label>Email</label>
+                <span>Email</span>
+              </div>
+
+
+              <div class="input-container">
+                <input type="text" class="input"  id="startlocation"   name="startlocation"  required>
+                <label>Start Location</label>
+                <span>Start Location</span>
+              </div> 
+              
+              <div class="input-container">
+                <input type="text" class="input"  id="destination" name="destination"  required>
+                <label>Destination</label>
+                <span>Destination</span>
+              </div> 
+              <div class="input-container">
+                <!-- <h6>Arrival</h6> -->
+                <input type="date" class="input" placeholder="none" id="arrival" name="arrival"  required>
+                <label>Arrival</label>
+                <span>Arrival</span> 
+              </div> 
+
+              <div class="input-container">
+                <input type="date" class="input"  id="leaving" name="leaving"  required>
+                <label>Leaving</label>
+                <span>Leaving</span>
+              </div> 
+           
+               <div class="input-container ">
+                <input type="text" class="input" name="noofguest" id="noofguest"   required>
+                
+                <label for="">NO. of Guest</label>
+                <!-- <input type="number" placeholder="number of guests"> -->
+                 <span>No. of Guest</span>  
+                 
+              </div> 
+
+
+            <div class="input-container textarea">
+              <textarea name="message" class="input" id="message"  "></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input  name="submit" type="submit" value="submit" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var todayDate=new Date();
+      var month=todayDate.getMonth();
+      var year=todayDate.getUTCFullYear()-0;
+      var tdate=todayDate.getDate();
+      if(month<10){
+          month='0'+month;
+      }
+      if(tdate<10){
+          tdate='0'+tdate;
+      }
+      var maxDate=year+"-"+month+"-"+tdate;
+      document.getElementById("demo").setAttribute("min",maxDate);
+      console.log(maxDate);
+  </script>
+    <script src="js/form.js"></script>
+  </body>
+</html>

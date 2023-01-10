@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.section{
+    width: 100%;
+   height:100%;
+  
+    background-color: rgb(255, 255, 255);
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+  --orange:#ffa500;
+}
+
+html{
+	font-size: 62.5%;
+	 text-decoration: none;
+	overflow-x: hidden;
+	scroll-padding-top: 6rem;
+	scroll-behavior: smooth;
+  }
+  
+  section{
+	padding:2rem 9%;
+  }
+  
+  .heading{
+	text-align: center;
+	padding:5rem 0;
+	font-size: 4rem;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .heading span{
+	font-size: 3.5rem;
+	background:rgba(255, 165, 0,.2);
+	color:var(--orange);
+	border-radius: .5rem;
+	padding:.2rem 1rem;
+  }
+  
+  .heading span.space{
+	background:none;
+  }
+  
+  .btn{
+	display: inline-block;
+	margin-top: 1rem;
+	background:var(--orange);
+	color:#fff;
+	padding:.8rem 3rem;
+	border:.2rem solid var(--orange);
+	cursor: pointer;
+	font-size: 1.7rem;
+  }
+  
+  .btn:hover{
+	background:rgba(255, 165, 0,.2);
+	color:var(--orange);
+  }
+  
+  header{
+	position: fixed;
+	top:0; left: 0; right:0;
+	background:#333;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding:2rem 9%;
+  }
+  
+  header .logo{
+	font-size: 2.5rem;
+	font-weight: bolder;
+	color:red;
+	text-transform: lowercase;
+  }
+  
+  header .logo span{
+	color:red;
+  }
+  
+  header .navbar a{
+	color:#fff;
+	padding: 1rem;
+	font-size: 2rem;
+	margin:0 .8rem;
+  }
+  
+  header .navbar a:hover{
+	color:var(--orange);
+  }
+
+*{
+  font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none; border:none;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+
+*::selection{
+  background:var(--orange);
+  color:#fff;
+}
+
+
+section{
+  padding:2rem 9%;
+}
+
+
+  
+  .heading{
+    text-align: center;
+    padding:2.5rem 0
+  }
+  
+  .heading span{
+    font-size: 3.5rem;
+    background:rgba(255, 165, 0,.2);
+    color:var(--orange);
+    border-radius: .5rem;
+    padding:.2rem 1rem;
+  }
+  
+  .heading span.space{
+    background:none;
+  }
+  
+  .btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background:var(--orange);
+    color:#fff;
+    padding:.8rem 3rem;
+    border:.2rem solid var(--orange);
+    cursor: pointer;
+    font-size: 1.7rem;
+  }
+  
+  .btn:hover{
+    background:rgba(255, 165, 0,.2);
+    color:var(--orange);
+  }
+  
+  header{
+    position: fixed;
+    top:0; left: 0; right:0;
+    background:#333;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem 9%;
+  }
+  
+  header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:red;
+  }
+  
+.container .p h3{
+      margin-top:25rem;
+      font-family: 'Times New Roman', Times, serif;
+     font-size:45px;
+ }
+  
+.container{
+   
+    margin-bottom:8rem;
+     
+}
+
+
+.whatsapp-btn-container {
+  position: fixed;
+  right: 30px;
+  opacity: 0;
+  bottom: -50px;
+  padding: 24px;
+  animation: fade-up 1000ms forwards;
+  animation-delay: 1000ms;
+}
+
+@keyframes fade-up {
+  100% {
+      bottom: 25px;
+      opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 750px){
+  
+@keyframes fade-up {
+  100% {
+      bottom: 35px;
+      opacity: 1;
+  }
+}
+
+}
+
+.whatsapp-btn-container .whatsapp-btn {
+  font-size: 48px;
+  color: #25d366;
+  display: inline-block;
+  transition: all 400ms;
+}
+
+.whatsapp-btn-container .whatsapp-btn:hover {
+  transform: scale(1.2);
+}
+
+.whatsapp-btn-container span {
+  position: absolute;
+  top: 0;
+  left: 4px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #075e54;
+  transform: rotateZ(20deg) translateX(10px);
+  opacity: 0;
+  transition: all 400ms;
+}
+
+.whatsapp-btn-container .whatsapp-btn:hover + span {
+  transform: rotateZ(0deg) translateX(0px);
+  opacity: 1;
+}
+

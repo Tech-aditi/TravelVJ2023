@@ -1,0 +1,51 @@
+
+  .btn{
+	outline: none;
+	padding: 2px;
+	border: none;
+	border-radius: 5rem;
+	background: var(--color);
+	color:#fff;
+	cursor: pointer;
+	height:3.5rem;
+	width: 10rem;
+	font-size: 5px;
+	box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
+  }
+  
+  .btn:hover{
+      font-size: 5px;
+	letter-spacing: .1rem;
+	opacity: .8;
+  }
+  
+    .videoAlign {
+	display: flex;
+	justify-content: center;
+	}
+
+   .courseHeader {
+		font-family: 'Times New Roman', Times, serif;
+		font-size: 3.7rem;
+		text-align: center;	
+	}
+
+   .courseDetails {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 1.4rem;
+	text-align: left;
+	padding-left: 1rem;
+	/*padding-right: 5rem;*/
+	}
+	
+	
+	@media screen and (max-width: 767px) {
+.courseHeader {
+		font-family: 'Times New Roman', Times, serif;
+		font-size: 15px;
+		text-align: center;	
+	}
+
+ 
+}
+	
